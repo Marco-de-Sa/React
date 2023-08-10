@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 class Products extends Component {
     render() {
-//      const products = ["Learning React", "Pro React", "Beginning React"];
-      const products = [];
+     const products = ["Learning React", "Pro React", "Beginning React"];
+      // const products = [];
 
       const listProducts = products.map((product) => (
         <li key={product.toString()}>{product}</li>
