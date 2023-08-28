@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+// import JumboTronComponent from './JumboTronComponent';
+import UserForm from './UserForm';
+// import Products from './Products';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+
+    return (
+      <div className="App">
+        {/* <JumboTronComponent>
+          This is a long sentence, and I want to insert content into the
+          jumbotron component from the outside .
+        </JumboTronComponent> */}
+        <UserForm></UserForm>
+        {/* <Products /> */}
+      </div>
+    );
+  }
 }
 
 export default App;
