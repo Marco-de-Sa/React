@@ -5,7 +5,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <GitHub />
+        {this.state.isLoading &&
+          <h4>Getting data...</h4>
+        }
       </div>
     );
   }
